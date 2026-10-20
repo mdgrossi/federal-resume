@@ -76,7 +76,8 @@ experience:
         - Established a collaborative relationship between NCEI, the NOAA Integrated Ocean Observing System Program Office, and external partners to resolve long-standing data archival issues by leading the implementation of metadata standardization and controlled vocabularies to improve data FAIRness. Implemented the archival of delayed-mode ocean glider data for the first time, increasing public access to glider data by several-fold.
         - Collaborated with the Navy to define metadata requirements for UxS platforms and develop joint metadata standards for data collection and dissemination leading to the development of a joint NOAA-Navy metadata schema to bolster data interoperability and streamline data sharing within the federal government.
         - Served as sample data manager for R/V Okeanos Explorer cruise EX2107. Documented all samples collected during deep sea dives into structured database application and created Smithsonian labels for every specimen. Managed photographs, video frame grabs, and video snippets from two ROVs for all samples and specimens.
-        - Collaborated with the NOAA Office of Research Transition and Application to align research-to-operation transition planning with NCEI data management planning to help scientists and researchers throughout NOAA develop data management strategies commensurate with a project’s Technical Readiness Level.    - role: Research Assistant
+        - Collaborated with the NOAA Office of Research Transition and Application to align research-to-operation transition planning with NCEI data management planning to help scientists and researchers throughout NOAA develop data management strategies commensurate with a project’s Technical Readiness Level.
+    - role: Research Assistant
       employer: University of Miami
       location: Key Biscayne, FL
       hours-per-week: 40
@@ -94,7 +95,8 @@ experience:
       details: |
         - Implemented $130k NOAA Mid-Atlantic Regional Association Coastal Ocean Observing System ocean monitoring and research initiative by managing autonomous underwater glider missions and high-frequency (HF) marine radar throughout southeastern New England. Demonstrated ability to successfully and simultaneously manage multiple high-priority and time-sensitive projects.
         - Managed end-to-end operations of three glider missions in two years, surpassing the lab goal of one deployment per year. - Maintained and operated four HF radar sites in the northeast region, exceeding the operational goal of having 80% of the network running 80% of the time.
-        - Recruited, trained, and supervised five student workers and community volunteers in the lab and field.    - role: Research Assistant
+        - Recruited, trained, and supervised five student workers and community volunteers in the lab and field.
+    - role: Research Assistant
       employer: University of Delaware
       location: Lewes, DE
       hours-per-week: 40
