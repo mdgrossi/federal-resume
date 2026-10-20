@@ -3,11 +3,11 @@ format:
   html:
     toc: true
   resume-pdf:
-    output-file: "my-resume"
+    output-file: "Grossi-fed-resume"
     output-ext: "pdf"
     keep-tex: false
   docx:
-    output-file: "my-resume"
+    output-file: "Grossi-fed-resume"
     output-ext: "docx"
 metadata-files:
   - _contents.yml
