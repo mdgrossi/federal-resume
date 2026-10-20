@@ -1,104 +1,161 @@
-title: John Doe, Jr.
-subtitle: Underwater Basket Weaver
+title: Matthew D. Grossi, Ph.D.
+subtitle: Data Scientist
 author:
-  firstname: "John"
-  lastname: "Doe"
-  suffix: "Jr."
+  firstname: "Matthew D."
+  lastname: "Grossi"
+  suffix: "Ph.D."
 contact:
-  address: 
-    line1: 123 Waterman Lane
-    line2: Anylocation, US
-  phone: 555-123-4321
-  email: "emailaddress"
-  website: "personalwebsiteurl"
-  github: "GithubUsername"
-  linkedin: "linkedInUrlHandle"
-  orcid: "orcid"
-  researchgate: "ResearchGateUrlHandle"
-  extrainfo: "Anything else to highlight up front?"
+  email: "matt.grossi@proton.me"
+  phone: 8603071981
+  website: "mdgrossi.github.io"
+  linkedin: "matthewgrossi"
+  github: "mdgrossi"
+  orcid: "0000-0002-8550-3189"
+  researchgate: "Matthew_Grossi2"
+  extrainfo: "Desired Locations: Remote; Beaufort, NC; Newport, NC; North Carolina"
 education:
   include-in-resume: true
   resume-header: "Education"
   abbreviate-degrees: true
   items:
-    - degree: Bachelor of Arts
-      major: Underwater Basket Weaving
-      minor: Diving
-      institution: University of Awesomeness
-      location: Anylocation, US
-      date: August 2000
-      credits: 120
-      gpa: 3.90/4.00 
-      extra: Graduated top of my class of 1
-    - degree: Master of Arts
-      major: Upside Down Underwater Basket Weaving
-      institution: University of Awesomeness
-      location: Anylocation, US
-      date: August 2002
+education:
+  include-in-resume: true
+  resume-header: Education
+  items:
+    - degree: Doctor of Philosophy
+      major: Meteorology and Physical Oceanography
+      institution: University of Miami
+      location: Coral Gables, FL
+      date: 2021
+      gpa: 3.96/4.00
       credits: 65
-      gpa: 3.91/4.00
+      extra: |
+        Dissertation: "Lagrangian trajectory prediction using machine learning"
+        Graduate Honors: Award of Academic Merit
+    - degree: Master of Science
+      major: "Marine Studies: Oceanography"
+      institution: University of Delaware
+      location: Newark, DE
+      date: 2010
+      gpa: 3.85/4.00
+      credits: 36
+    - degree: Bachelor of Science
+      major: Physical Oceanography
+      institution: Florida Institute of Technology
+      location: Melbourne, FL
+      date: 2008
+      minor: Meteorology
+      gpa: 3.40/4.00
+      credits: 140
+      extra: |
+        Undergraduate Research: "Evaluation of the Real-Time Ocean Forecast System in Florida Atlantic Coastal Waters"
+        Graduate Honors: *cum laude*
 experience:
   include-in-resume: true
   resume-header: Professional Experience
   items:
-    - role: Senior Basket Weaver III
-      employer: Underwater Basket Weavers of America
-      location: Pacific Ocean
+    - role: Data Scientist
+      employer: NOAA Southeast Fisheries Science Center (SEFSC)
+      location: Beaufort, NC
+      hours-per-week: 40
+      federal-series: ZP-1301-04
+      date: Jan 2023--present
+      details: |
+        - Overseeing the development and deployment of computer vision machine learning algorithms to automate object detection, tracking, species identification, and fish aging from images and stereo video by bridging multidisciplinary federal, academic, and industry partners and spearheading transition planning within the SEFSC. Awarded $80k to operationalize these models to increase data processing efficiency by up to 50%, reduce manual processing and annotation time by up to 90%, and save over $0.5M annually.
+        - Leading a 3-year $768k collaborative initiative across five Divisions to bridge scientists, data users, and IT to modernize SEFSC data infrastructure and address bottlenecks through consolidation and data warehousing strategies aligned with FAIR data principles and data governance best practices (competitive funding award).
+        - Collaborating across six regional Science Centers to replace siloed data management practices with national solutions to common problems, streamline data pipelines, automate workflows, and minimize duplicated technological efforts. Stood up GCP cloud-based high-performance video and image analysis software to scale up data processing capabilities of 30 TB (1000 hrs) of annual underwater survey video data. Stood up cloud storage to enable public data access (GCP).
+        - Leading Center-wide initiative to encourage innovation by documenting and implementing best practices (e.g., data governance), championing open science (e.g., GitHub, Quarto, Jupyter), and leading technical training in Python and machine learning.
+        - AWARDS: Three "On the Spot" awards (2024-2025) and four "Shout-out" recognitions (2023-2024). Ranked in top 30% of all FMC staff for annual performance (2024 and 2025)
+    - role: Uncrewed Systems (UxS) Data Coordinator
+      employer: NOAA National Centers for Environmental Information (NCEI)
+      location: Stennis Space Center, MS
       hours-per-week: 40
       federal-series: ZP-1301-03
-      date: Jan 2010--present
+      date: Aug 2021--Jan 2023
       details: |
-        * Design unique and custom baskets according to customers' needs
-        * Assemble ~100 made-to-order baskets underwater each year, with 105% 5-star ratings on our customer feedback portal.
+        - Developed and documented a cloud-optimized, on-demand, automated data pipeline in AWS, reducing the data ingest-to-archive timeline from months to minutes. Demonstrated to Leadership cost, computation, and scalability benefits of cloud computing for data processing and storage by comparing lift-and-shift to refactored cloud migration methods and netCDF to Zarr data formats.
+        - Established a collaborative relationship between NCEI, another NOAA program office, and external partners to resolve long-standing data archival issues by leading the implementation of metadata standardization and controlled vocabularies to improve data FAIRness. Implemented the archival of delayed-mode ocean glider data for the first time, increasing public access to glider data by several-fold.
+        - Collaborated with the Navy to define metadata requirements for uncrewed systems platforms and develop joint metadata standards for data collection and dissemination leading to the development of a joint NOAA-Navy metadata schema to bolster data interoperability and streamline data sharing within the federal government.
+        - Served as NOAA federal representative and subject matter expert to Gulf Blue Navigator cohort of late-stage startup companies supporting the blue tech economy along the U.S. Gulf Coast.
+        - Served as sample data manager for R/V Okeanos Explorer cruise EX2107. Documented all samples collected during deep sea dives into database application and created Smithsonian labels for every specimen. Managed photographs, video frame grabs, and video snippets from two ROVs for all samples and specimens.
+        - Collaborated with the NOAA Office of Research Transition and Application to align research-to-operation transition planning with NCEI data management planning to help scientists and researchers throughout NOAA develop data management strategies commensurate with a project’s Technical Readiness Level.
+    - role: Research Assistant
+      employer: University of Miami
+      location: Key Biscayne, FL
+      hours-per-week: 40
+      date: Aug 2016--Aug 2021
+      details: |
+        - Planned, organized, and executed research project developing computer vision neural network models in Python for predicting ocean drifter trajectory time series, reducing error by nearly 50% over conventional regression models in many cases and at lower computational cost than theory-based models. Tested methods included univariate and multivariate singular spectrum analysis models, unsupervised clustering algorithms (SciPy library), artificial neural networks, and computer vision convolutional neural networks (PyTorch).
+        - Delivered more than 15 oral presentations to both technical audiences at conferences, symposiums, and science meetings and to lay audiences at outreach events, in the local community, and in underprivileged school classrooms.
+        - Participated in a 3-week multi-institutional field campaign in the Gulf of Mexico utilizing a ship, small boats, uncrewed aerial vehicles, an uncrewed underwater vehicle, and 500 surface drifters to investigate the movement of material across the shelf, into coastal waters, and onto the shore in the Louisiana Bight, one of the largest coordinated oceanographic drifter deployment experiments to date at the time
+        - AWARDS: (1) University of Miami Center for Computational Science Graduate Fellow in support of student-proposed multi-disciplinary research, one of only two graduate students university-wide (2017). (2) Gulf of Mexico Research Initiative Scholar recognized as an “outstanding graduate student” conducting “vital research [that] contributes to improved understanding about the damage, response, and recovery following the Deepwater Horizon oil spill (2019). (3) Rosenstiel School TA Excellence Award based on nominations by and feedback from students and instructor (2019).
+    - role: Research Associate
+      employer: University of Massachusetts Dartmouth
+      location: New Bedford, MA
+      hours-per-week: 40
+      date: Sep 2014--Jul 2016
+      details: |
+        - Implemented $130k NOAA Mid-Atlantic Regional Association Coastal Ocean Observing System ocean monitoring and research initiative by managing autonomous underwater glider missions and high-frequency (HF) marine radar throughout southeastern New England. Demonstrated ability to successfully and simultaneously manage multiple high-priority and time-sensitive projects.
+        - Managed end-to-end operations of three glider missions in two years, surpassing the lab goal of one deployment per year. - Maintained and operated four HF radar sites in the northeast region, exceeding the operational goal of having 80% of the network running 80% of the time.
+        - Recruited, trained, and supervised five student workers and community volunteers in the lab and field.
+    - role: Research Assistant
+      employer: University of Delaware
+      location: Lewes, DE
+      hours-per-week: 40
+      date: Jul 2008--Aug 2010
+      details: |
+        - Developed a novel machine learning approach in R to predict ocean density profiles from satellite-derived surface observations using 300,000+ temperature-salinity profiles, ten global ocean remote sensing products, and neural networks.
+        - Delivered regular demonstrations of research and data products to >1200 annual University visitors including elected officials, school groups, and community members using a state-of-the-art global data visualization display and Google Earth.
+        - Participated in week-long cruises aboard 146-foot coastal research vessel studying coastal water quality, dynamics, and primary productivity in the mid-Atlantic Bight, logging more than 80 days at sea.    
 publications:
   include-in-resume: true
   resume-header: Publications and Presentations
   peer-reviewed:
     resume-subheader: Peer Reviewed
     items:
-      - paper: Paper 1
-      - paper: Paper 2
-      - paper: Paper 3
+      - paper: "**Grossi, M.D.**, S. Jegelka,  P.F.J. Lermusiaux, T.M. Özgökmen (2025) Surface drifter trajectory prediction in the Gulf of Mexico using neural networks, *Ocean Modelling*, 196, 102543."
+      - paper: "Shah, C, M.M. Nabi, S.Y. Alaba, M.D. Campbell, R. Caillouet, **M.D. Grossi**, J.E. Ball, and R. Moorhead (2025) YOLOv8-TF: Transformer-Enhanced YOLOv8 for Underwater Fish Species Recognition with Class Imbalance Handling, *Sensors*, 25, 1846, doi:10.3390/s25061846."
+      - paper: "**Grossi, M.D.** , T.M. &Ouml;zg&ouml;kmen, M. Kubat (2020) Predicting particle trajectories in oceanic flows using artificial neural networks, *Ocean Modelling*, 156, 101707."
+      - paper: "Geiger, E.F., **M.D. Grossi**, A.C. Trembanis, J.T. Kohut, M.J. Oliver (2011) Satellite-Derived Coastal Ocean and Estuarine Salinity in the Mid-Atlantic, *Continental Shelf Research*, doi:10.1016/j.csr.2011.12.001."
   proceedings:
     resume-subheader: Conference Proceedings
     items:
-      - paper: Proceedings 1
-      - paper: Proceedings 2
+      - paper: "Shah, C., M.M. Nabi, I.A. Ebu, J. Prior, **M.D. Grossi**, F. Wallace, T. Rowell, J.E. Ball, R. Moorhead, R. Caillouet, M. Campbell (2025) Improved fish tracking in underwater images for marine biodiversity monitoring, Proc. SPIE 13460, Machine Learning from Challenging Data 2025, 134600F (29 May 2025), https://doi.org/10.1117/12.3053499."
+      - paper: "Shah, C., M.M. Nabi, S.Y. Alaba, R. Caillouet, J. Prior, M. Campbell, **M.D. Grossi**, F. Wallace, J.E. Ball, and R. Moorhead (2024) Active detection for fish species recognition in underwater environments, Proc. SPIE 13061, Ocean Sensing and Monitoring XVI, 130610D, 6 June 2024, https://doi.org/10.1117/12.3013344."
+      - paper: "Alaba, S.Y., J.H. Prior, C. Shah, M.M. Nabi, J.E. Ball, R. Moorhead, M.D. Campbell, F. Wallace, and **M.D. Grossi** (2024) Multifish tracking for marine biodiversity monitoring, Proc. SPIE 13061, Ocean Sensing and Monitoring XVI, 130610E, 6 June 2024, https://doi.org/10.1117/12.3013503."
   tech-reports:
     resume-subheader: Technical Reports (not peer reviewed)
     items:
-      - paper: Tech Report 1
+      - paper: "**Grossi, M.D.**, M. Monim, A. Gangopadhyay (2017) Global Climate Patterns: An Overview of Arctic Oscillation, Pacific Decadal Oscillation, Pacific/North American Pattern, and El Ni&ntilde;o Southern Oscillation, University of Massachusetts Dartmouth School for Marine Science and Technology Technical Report SMAST-17-0401, doi:10.13140/RG.2.2.34586.44480."
+      - paper: "W.S. Brown and **M. Grossi** (2016) Pre- and Post-Mission-6 Glider CTD Comparison Measurements: 11 June and 22 July 2015, University of Massachusetts Dartmouth School for Marine Science and Technology Technical Report SMAST-16-0501."
+      - paper: "W.S. Brown and **M. Grossi** (2015) Pre- and Post-Mission Glider CTD Comparison Measurements: 19 June 2014 and 6 February 2015, University of Massachusetts Dartmouth School for Marine Science and Technology Technical Report SMAST-15-06-01."
   talks:
-    resume-subheader: Talks and Posters
+    resume-subheader: Talks and Presentations (select)
     items:
-      - paper: Talk 1
-      - paper: Talk 2
-      - paper: Poster 1
+      - paper: "**Grossi, M.D.** (2024) Machine learning success and the next generation of data governance at the Southeast Fisheries Science Center, 2024 NOAA Enterprise Data Management Workshop (EDMW), virtual."
+      - paper: "**Grossi, M.D.** (2022) From Good to Great: Strengthening the FAIRness of underwater glider data through community metadata implementation, Underwater Glider User Group Workshop, Seattle, WA."
+      - paper: "**Grossi, M.D.**, K. Weathers, J. Bowers (2022) Beyond the Archive: Connectivity between community DACs and NCEI products, NOAA Integrated Ocean Observing System Data Management and Cyber-infrastructure Meeting (virtual/online)."
+      - paper: "**Grossi, M.D.** (2022) Migrating the Surface Underway Marine Database to the Cloud: Challenges and Lessons Learned, NOAA Environmental Data Management Workshop (virtual/online)."
+      - paper: "**Grossi, M.D.**, M. Kubat, T.M. Özgökmen (2020) Can Neural Networks Learn Realistic Ocean Trajectories?, Gulf of Mexico Oil Spill and Ecosystem Science Conference, Tampa, FL."
+      - paper: "**Grossi, M.D.**, M. Kubat, T.M. Özgökmen (2019) Predicting Oil Transport in Oceanic Flows: Are Neural Networks Up to the Task?, Gulf of Mexico Oil Spill and Ecosystem Science Conference, New Orleans, LA."
+      - paper: "**Grossi, M.D.**, T.M. Özgökmen (2018) Can artificial intelligence predict the dispersion of spilled oil?, Gulf of Mexico Oil Spill and Ecosystem Science Conference, New Orleans, LA."
 trainings:
   resume-header: Training
   include-in-resume: true
   items:
-    - training: Specialty weaving techniques
-certifications:
-  resume-header: Certifications
-  include-in-resume: true
-  items:
-    - certification: Open Water Dive Certification
+    - training: Open Science and Mentoring with a Coach Approach training (NMFS Open Science/Openscapes, 2024-2026)
+    - training: Overcoming Unconscious Bias, Managing Projects and Virtual Teams, and Strategic Thinking training (2023-2024)
+    - training: Amazon Web Services Data Analytics Fundamentals and Cloud Practitioner Essentials courses (2021-2022)
+    - training: Data Visualization in Python course (2021)
+    - training: CODAR Basic Training Course, CODAR Ocean Sensors, Mountain View, CA (2015)
+    - training: Slocum Glider Operators Training, Teledyne Technologies, Inc., Falmouth, MA and Rutgers University, New Brunswick, NJ (2009 and 2014)
 languages:
   resume-header: Languages
-  include-in-resume: true
+  include-in-resume: false
   items:
     - language: English
       speaking-proficiency: advanced
       writing-proficiency: advanced
       reading-proficiency: advanced
-extra:
-  resume-header: Additional Information
-  include-in-resume: true
-  text: | 
-    I can do a lot of things well.
-
-    * Like make resumes
-    * And list things I do well
-resume-page-numbers: false
+resume-page-numbers: true
 resumefilename: "my-resume"
