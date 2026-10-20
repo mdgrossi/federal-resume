@@ -5,14 +5,14 @@ author:
   lastname: "Grossi"
   suffix: "Ph.D."
 contact:
-  email: "matt.grossi@proton.me"
+  email: "matt.grossi@noaa.gov"
   phone: 8603071981
-  website: "mdgrossi.github.io"
+  website: "MattGrossi-NOAA.github.io"
   linkedin: "matthewgrossi"
   github: "mdgrossi"
   orcid: "0000-0002-8550-3189"
   researchgate: "Matthew_Grossi2"
-  extrainfo: "Desired Locations: Remote; Beaufort, NC; Newport, NC; North Carolina"
+  # extrainfo: "Desired Locations: Remote; Beaufort, NC; Newport, NC; North Carolina"
 education:
   include-in-resume: true
   resume-header: "Education"
