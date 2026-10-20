@@ -53,13 +53,8 @@ jobs:
 
         "$TLMGR" install \
           moderncv fontawesome6 lastpage fancyhdr enumitem \
-          changepage etoolbox hyphenat setspace
-          
-    - name: Install LaTeX packages
-      run: |
-        quarto install tinytex --update-path
-        tlmgr install cm-super lm lm-math lmodern collection-fontsrecommended
-    
+          changepage etoolbox hyphenat setspace cm-super lm lm-math lmodern collection-fontsrecommended
+              
     - name: Render and Publish to GitHub Pages
       uses: quarto-dev/quarto-actions/publish@v2
       with:
