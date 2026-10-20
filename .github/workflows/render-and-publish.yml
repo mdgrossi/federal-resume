@@ -1,0 +1,63 @@
+name: Render and deploy quarto files
+on:
+  push:
+    branches: main
+  pull_request:
+
+jobs:
+  quarto-render-and-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: 'true'
+
+    - name: Update apt-get
+      run: sudo apt-get update
+        
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        cache: 'pip' # caching pip dependencies
+    - run: pip install -r requirements.txt
+    
+    - name: Set up Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
+      with:
+        # To install LaTeX to build PDF book 
+        tinytex: true
+        # uncomment below and fill to pin a version
+        # version: 0.9.600
+
+    - name: Pre-install LaTeX packages for cv-pdf template
+      # Installs everything cvtemplate.tex needs before the first pdflatex
+      # pass. This avoids a known Quarto/TinyTeX bug where the automatic
+      # tlmgr-install-then-retry loop fails with "Latexmk: Nothing to do"
+      # after installing a missing package (see quarto-dev/quarto-cli
+      # discussion #11858) — pre-installing means the render never needs
+      # to trigger that retry path.
+      run: |
+        TLMGR="$HOME/.TinyTeX/bin/x86_64-linux/tlmgr"
+
+        # A freshly-installed TinyTeX often ships an outdated tlmgr that
+        # refuses to install packages until it updates itself. `tlmgr
+        # update --self` has been known to hang in CI, so bound it with a
+        # timeout and fall back to CTAN's standalone updater script if it
+        # doesn't finish quickly.
+        timeout 120 "$TLMGR" update --self || \
+          curl -sL https://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh | sh -s -- --no-verify-downloads
+
+        "$TLMGR" install \
+          moderncv fontawesome6 lastpage fancyhdr enumitem \
+          changepage etoolbox hyphenat setspace
+
+    - name: Render and Publish to GitHub Pages
+      uses: quarto-dev/quarto-actions/publish@v2
+      with:
+        target: gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions

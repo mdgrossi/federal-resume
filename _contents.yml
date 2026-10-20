@@ -1,0 +1,104 @@
+title: John Doe, Jr.
+subtitle: Underwater Basket Weaver
+author:
+  firstname: "John"
+  lastname: "Doe"
+  suffix: "Jr."
+contact:
+  address: 
+    line1: 123 Waterman Lane
+    line2: Anylocation, US
+  phone: 555-123-4321
+  email: "emailaddress"
+  website: "personalwebsiteurl"
+  github: "GithubUsername"
+  linkedin: "linkedInUrlHandle"
+  orcid: "orcid"
+  researchgate: "ResearchGateUrlHandle"
+  extrainfo: "Anything else to highlight up front?"
+education:
+  include-in-resume: true
+  resume-header: "Education"
+  abbreviate-degrees: true
+  items:
+    - degree: Bachelor of Arts
+      major: Underwater Basket Weaving
+      minor: Diving
+      institution: University of Awesomeness
+      location: Anylocation, US
+      date: August 2000
+      credits: 120
+      gpa: 3.90/4.00 
+      extra: Graduated top of my class of 1
+    - degree: Master of Arts
+      major: Upside Down Underwater Basket Weaving
+      institution: University of Awesomeness
+      location: Anylocation, US
+      date: August 2002
+      credits: 65
+      gpa: 3.91/4.00
+experience:
+  include-in-resume: true
+  resume-header: Professional Experience
+  items:
+    - role: Senior Basket Weaver III
+      employer: Underwater Basket Weavers of America
+      location: Pacific Ocean
+      hours-per-week: 40
+      federal-series: ZP-1301-03
+      date: Jan 2010--present
+      details: |
+        * Design unique and custom baskets according to customers' needs
+        * Assemble ~100 made-to-order baskets underwater each year, with 105% 5-star ratings on our customer feedback portal.
+publications:
+  include-in-resume: true
+  resume-header: Publications and Presentations
+  peer-reviewed:
+    resume-subheader: Peer Reviewed
+    items:
+      - paper: Paper 1
+      - paper: Paper 2
+      - paper: Paper 3
+  proceedings:
+    resume-subheader: Conference Proceedings
+    items:
+      - paper: Proceedings 1
+      - paper: Proceedings 2
+  tech-reports:
+    resume-subheader: Technical Reports (not peer reviewed)
+    items:
+      - paper: Tech Report 1
+  talks:
+    resume-subheader: Talks and Posters
+    items:
+      - paper: Talk 1
+      - paper: Talk 2
+      - paper: Poster 1
+trainings:
+  resume-header: Training
+  include-in-resume: true
+  items:
+    - training: Specialty weaving techniques
+certifications:
+  resume-header: Certifications
+  include-in-resume: true
+  items:
+    - certification: Open Water Dive Certification
+languages:
+  resume-header: Languages
+  include-in-resume: true
+  items:
+    - language: English
+      speaking-proficiency: advanced
+      writing-proficiency: advanced
+      reading-proficiency: advanced
+extra:
+  resume-header: Additional Information
+  include-in-resume: true
+  text: | 
+    I can do a lot of things well.
+
+    * Like make resumes
+    * And list things I do well
+resume-page-numbers: false
+resumefilename: "my-resume"

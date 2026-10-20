@@ -1,0 +1,289 @@
+% =========================================================================== %
+%
+% DOCUMENT DEFINITION
+%
+% =========================================================================== %
+
+\documentclass[letterpaper,10pt,final,sans]{moderncv}
+
+% =========================================================================== %
+%
+% RESUME THEME
+%
+% Color options:
+%     black, blue (default), burgundy, green, grey, orange, purple, red
+% Style options:
+%     casual (default), classic, banking, oldstyle, fancy
+%
+% =========================================================================== %
+
+% Resume theme
+\moderncvtheme[blue]{banking}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% Page margins and column widths
+\usepackage[margin=0.5in]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
+\usepackage{etoolbox, changepage}
+\patchcmd{\makehead}% <cmd>
+  {0.8\textwidth}% <search>
+  {\linewidth}% <replace>
+  {}{}% <success><failure>
+\let\originalrecomputecvlengths\recomputecvlengths
+  \renewcommand*{\recomputecvlengths}{%
+    \originalrecomputecvlengths%
+      \setlength{\quotewidth}{0.94\textwidth}}
+%\recomputelengths
+\usepackage[none]{hyphenat}  % Prevents hyphenation
+\usepackage{setspace} % Line spacing, if desired
+\usepackage{graphicx} % For bars
+\usepackage{multicol} % Multiple columns
+\usepackage{enumitem} % Adjust bulleted list spacing (http://ctan.org/pkg/enumitem)
+
+% Page numbers
+$if(resume-page-numbers)$
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\nopagenumbers{}
+\rfoot{\addressfont\itshape\textcolor{gray}{$author.lastname$ | \thepage\ of \pageref{LastPage}}}
+$else$
+\nopagenumbers{}
+$endif$
+
+% cventry spacing
+\newcommand{\cvspace}{0.6em}
+
+% Define tightlist
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{8pt}\setlength{\parskip}{0pt}}
+
+% Freeform text box for extra info
+\newsavebox{\extrabox}
+
+% Skills graphics
+% Renders a progress-bar to indicate a certain skill in percent.
+% param 1: name of the skill / tech / etc.
+% param 2: level (for example in years)
+% param 3: percent, values range from 0 to 1
+\newcommand{\cvskillbar}[3] {
+	\begin{tabular*}{1\columnwidth}{>{\raggedright\arraybackslash}p{0.72\columnwidth}  r}
+ 		\textcolor{black}{\textbf{\small{#1}}} & \textcolor{color2}{\small{#2}}
+	\end{tabular*}
+	\hspace{4pt}
+	\begin{tikzpicture}[scale=1,rounded corners=2pt,very thin]
+		\fill [lightgray] (0,0) rectangle (1\columnwidth, 0.15);
+		\fill [color1] (0,0) rectangle (#3\columnwidth, 0.15);
+  	\end{tikzpicture}%
+	 \vspace{0.5em}%
+}
+
+% Header information
+\firstname{$author.firstname$}
+$if(author.suffix)$
+\familyname{$author.lastname$\textcolor{gray}{, $author.suffix$}}
+$else$
+\familyname{$author.lastname$}
+$endif$
+$if(subtitle)$
+\title{$subtitle$}
+$endif$
+$if(contact.address)$
+\address{$contact.address.line1$}{$contact.address.line2$}
+$endif$
+$if(contact.phone)$
+\phone[mobile]{$contact.phone$}
+$endif$
+$if(contact.email)$
+\email{$contact.email$}
+$endif$
+$if(contact.website)$
+\homepage{$contact.website$}
+$endif$
+$if(contact.linkedin)$
+\social[linkedin]{$contact.linkedin$}
+$endif$
+$if(contact.orcid)$
+\social[orcid]{$contact.orcid$}
+$endif$
+$if(contact.researchgate)$
+\social[researchgate]{$contact.researchgate$}
+$endif$
+$if(contact.extrainfo)$
+\extrainfo{$contact.extrainfo$}
+$endif$
+
+\begin{document}
+
+\normalsize
+\makecvtitle
+
+$if(experience)$
+$if(experience.include-in-resume)$
+$if(experience.resume-header)$
+\section{$experience.resume-header$}
+$else$
+\section{Experience}
+$endif$
+$for(experience.items)$
+$if(experience.items.federal-series)$
+\cventry[\cvspace]{$experience.items.hours-per-week$ hours per week}{$experience.items.employer$}{$experience.items.role$ ($experience.items.federal-series$) \vspace{0.25em}}{$experience.items.date$}{$experience.items.location$}{\vspace{0.25em} $experience.items.details$}
+$else$
+\cventry[\cvspace]{$experience.items.hours-per-week$ hours per week}{$experience.items.employer$}{$experience.items.role$ \vspace{0.25em}}{$experience.items.date$}{$experience.items.location$}{\vspace{0.25em} $experience.items.details$}
+$endif$
+$endfor$
+$endif$
+$endif$
+
+$if(education)$
+$if(education.include-in-resume)$
+$if(education.head)$
+\section{$education.resume-header$}
+$else$
+\section{Education}
+$endif$
+$for(education.items)$
+$if(education.items.coursework)$
+\cventry{$education.items.location$}{$education.items.institution$}{$education.items.degree$, $education.items.major$ ($education.items.credits$ credit hours)}{$education.items.date$}{GPA $education.items.gpa$}{$education.items.coursework$}
+$else$
+\cventry{$education.items.location$}{$education.items.institution$}{$education.items.degree$, $education.items.major$ ($education.items.credits$ credit hours)}{$education.items.date$}{GPA $education.items.gpa$}{}
+$endif$
+$endfor$
+$endif$
+$endif$
+
+$if(trainings)$
+$if(trainings.include-in-resume)$
+$if(trainings.resume-header)$
+\section{$trainings.resume-header$}
+$else$
+\section{Trainings}
+$endif$
+\small
+\begin{itemize}
+$for(trainings.items)$
+\item $trainings.items.training$
+$endfor$
+\end{itemize}
+$endif$
+$endif$
+
+$if(certifications)$
+$if(certifications.include-in-resume)$
+$if(certifications.resume-header)$
+\section{$certifications.resume-header$}
+$else$
+\section{Certifications}
+$endif$
+\small
+\begin{itemize}
+$for(certifications.items)$
+\item $certifications.items.certification$
+$endfor$
+\end{itemize}
+$endif$
+$endif$
+
+$if(languages)$
+$if(languages.include-in-resume)$
+$if(langauges.resume-header)$
+\section{$languages.resume-header$}
+$else$
+\section{Language Skills}
+$endif$
+\small
+\begin{itemize}
+$for(languages.items)$
+\item \textbf{$languages.items.language$:} Speaking: $languages.items.speaking-proficiency$ | Writing: $languages.items.writing-proficiency$ | Reading: $languages.items.reading-proficiency$
+$endfor$
+\end{itemize}
+$endif$
+$endif$
+
+$if(extra)$
+$if(extra.include-in-resume)$
+$if(extra.resume-header)$
+\section{$extra.resume-header$}
+$else$
+\section{Extra Information}
+$endif$
+\small
+\begin{lrbox}{\extrabox}%
+\begin{minipage}[t]{\maincolumnwidth}
+\renewcommand{\quote}[1]{#1\par}
+\renewcommand{\tightlist}{\setlength{\itemsep}{0.25em}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}}
+$extra.text$
+\end{minipage}%
+\end{lrbox}
+\cvitem{}{\usebox{\extrabox}}
+$endif$
+$endif$
+
+\section{References}
+Available upon request.
+
+$if(publications)$
+$if(publications.include-in-resume)$
+$if(publications.resume-header)$
+\section{$publications.resume-header$}
+$else$
+\section{Publications}
+$endif$
+$if(publications.peer-reviewed)$
+$if(publications.peer-reviewed.resume-subheader)$
+\subsection{$publications.peer-reviewed.resume-subheader$}
+$else$
+\subsection{Peer Reviewed}
+$endif$
+\begin{itemize}
+$for(publications.peer-reviewed.items)$
+\item $publications.peer-reviewed.items.paper$
+$endfor$
+\end{itemize}
+$endif$
+
+$if(publications.proceedings)$
+$if(publications.proceedings.resume-subheader)$
+\subsection{$publications.proceedings.resume-subheader$}
+$else$
+\subsection{Proceedings}
+$endif$
+\begin{itemize}
+$for(publications.proceedings.items)$
+\item $publications.proceedings.items.paper$
+$endfor$
+\end{itemize}
+$endif$
+
+$if(publications.tech-reports)$
+$if(publications.tech-reports.resume-subheader)$
+\subsection{$publications.tech-reports.resume-subheader$}
+$else$
+\subsection{Technical Reports}
+$endif$
+\begin{itemize}
+$for(publications.tech-reports.items)$
+\item $publications.tech-reports.items.paper$
+$endfor$
+\end{itemize}
+$endif$
+
+$if(publications.talks)$
+$if(publications.talks.resume-subheader)$
+\subsection{$publications.talks.resume-subheader$}
+$else$
+\subsection{Talks and Posters}
+$endif$
+\begin{itemize}
+$for(publications.talks.items)$
+\item $publications.talks.items.paper$
+$endfor$
+\end{itemize}
+$endif$
+$endif$
+$endif$
+
+%\end{onehalfspacing}
+\end{document}
+

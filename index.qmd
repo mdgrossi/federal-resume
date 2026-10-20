@@ -1,0 +1,22 @@
+---
+format:
+  html:
+    toc: false
+metadata-files:
+  - _contents.yml
+
+Resume: R&egrave;sum&egrave;
+resume: r&egrave;sum&egrave;
+---
+
+### Click any of the following to preview samples of each {{< meta resume >}} format.  
+
+<br>
+
+|             | Website | Portable Document Format | Microsoft Word |              |
+| :---------- | :-: | :-: | :-: | :----------: |
+| **{{< meta Resume >}}** --- for federal jobs | [Preview site](resume.qmd) | [pdf]({{< meta resumefilename >}}.pdf) | [docx]({{< meta resumefilename >}}.docx) |  |
+
+<br>
+
+#### Instructions for using this template can be found in the [repo README](https://github.com/mdgrossi/resume-quarto-moderncv/blob/main/README.md).
