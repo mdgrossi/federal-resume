@@ -18,10 +18,6 @@ education:
   resume-header: "Education"
   abbreviate-degrees: true
   items:
-education:
-  include-in-resume: true
-  resume-header: Education
-  items:
     - degree: Doctor of Philosophy
       major: Meteorology and Physical Oceanography
       institution: University of Miami
