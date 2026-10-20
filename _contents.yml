@@ -105,7 +105,7 @@ experience:
         - Delivered regular demonstrations of research and data products to >1200 annual University visitors including elected officials, school groups, and community members using a state-of-the-art global data visualization display and Google Earth.
         - Participated in week-long cruises aboard 146-foot coastal research vessel studying coastal water quality, dynamics, and primary productivity in the mid-Atlantic Bight, logging more than 80 days at sea.    
 publications:
-  include-in-resume: true
+  include-in-resume: false
   resume-header: Publications and Presentations
   peer-reviewed:
     resume-subheader: Peer Reviewed
@@ -155,4 +155,4 @@ languages:
       writing-proficiency: advanced
       reading-proficiency: advanced
 resume-page-numbers: true
-resumefilename: "my-resume"
+resumefilename: "Grossi-fed-resume"
