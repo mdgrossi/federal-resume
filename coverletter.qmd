@@ -1,25 +1,31 @@
 ---
 format:
   coverletter-pdf:
-    output-file: "My-coverletter"
+    output-file: "Grossi-coverletter"
     output-ext: "pdf"
   # docx:
-  #   output-file: "My-coverletter"
+  #   output-file: "Grossi-coverletter"
   #   output-ext: "docx"
 metadata-files:
   - _contents.yml
 address:
-  line1: "Anylocation, USA"
-  line2: ""
+  line1: "101 Pivers Island Road"
+  line2: "Beaufort, NC 28516"
 coverletter:
-  recipient: "Hiring Team"
+  recipient: "Christopher Licitra"
   address: |
-    Basketwweavers, Inc. \newline
-    123 Street Ave. \newline
-    Somewhere Else, USA 12345
-  opening: Dear Hiring Team
+    NOAA Atlantic Oceanographic and Meteorological Laboratory \newline
+    4301 Rickenbacker Causeway \newline
+    Key Biscayne, FL 33149
+  opening: Dear Christopher
   closing: Sincerely
   enclosure: R&egrave;sum&egrave;
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I write to express my strong interest in the Supervisory Physical Scientist / Deputy Director (ZP-1301-05) detail opportunity at NOAA AOML. With an academic background in oceanography and meteorology and work experience in ocean observing and applied data science, I have built my career around bridging scientific discipline with modern data governance and cross-organizational collaboration. As a participant in NOAA's Leadership Competencies Development Program (LCDP) Cohort 14, this opportunity is ideal for applying my scientific expertise while simultaneously developing executive leadership, administrative oversight, and strategic decision-making skills.
+
+AOML's core research mission in oceanography and meteorology directly aligns with my academic foundation and scientific passion. Having earned my Ph.D. in Meteorology and Physical Oceanography from the University of Miami, I hold a deep appreciation for AOML's vital contributions to hurricane research, ocean-atmosphere dynamics, ocean observing, and prediction and forecasting. Across my career---from operating marine radar and ocean gliders for IOOS/MARACOOS to developing uncrewed systems data infrastructure at the NOAA National Centers for Environmental Information (NCEI) and now leading machine learning workflow automations at the Southeast Fisheries Science Center (SEFSC)---I have consistently worked at the intersection of observation, technology, and applied science. I am a strong proponent of open science, collaborative culture, and strategic innovation that empowers teams to work smarter, not harder. My experience leading transition planning at the SEFSC, collaborating with science and IT teams to modernize data systems and workflows, and replacing regional silos with national solutions to common problems has inspired me to take the next steps in personal leadership development within NOAA.
+
+This developmental assignment also aligns well with my LCDP learning goals. While I routinely lead technical teams, this detail offers the formal framework to gain direct supervisory experience, lead people, and oversee scientific programs at a much higher level. I look forward to broadening my administrative, financial, facilities, and human capital oversight skills. Having worked across NOAA Fisheries, at NCEI, and with IOOS regional observing networks, I bring a wide lense on NOAA's integrated mission. Representing AOML to external and internal partners will allow me to hone strategic planning and communication skills while advocating for AOML's scientific community and mission.
+
+Thank you for your consideration of my application. I welcome the opportunity to discuss how my experience and leadership development goals align with AOML's needs.
